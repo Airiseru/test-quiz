@@ -52,6 +52,10 @@ hr {
     grid-row: 1/2;
 }
 
+.second > img {
+    width: 63%;
+}
+
 .third {
     background-color: orange;
     color: black;
