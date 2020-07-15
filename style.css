@@ -1,0 +1,70 @@
+html {
+    background-color: black;
+    color: white;
+    box-sizing: border-box;
+}
+
+.top {
+    text-align: center;
+}
+
+.top > h1 {
+    letter-spacing: 10px;
+}
+
+.bot {
+    text-align: center;
+}
+
+hr {
+    border: none;
+    border-top: 1px dotted white;
+    width: 15%;
+    border-top-width: 8px;
+}
+
+.Container {
+    display: grid;
+    padding: 1em;
+    grid-gap: 1em;
+    grid-auto-rows: 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+}
+
+.first {
+    background-color: salmon;
+    color: black;
+    align-items: center;
+    grid-row: 1/2;
+    grid-column: 1/2;
+}
+
+.first > img {
+    width: 56%;
+}
+
+.second {
+    background-color: midnightblue;
+    align-items: center;
+    grid-row: 1/2;
+}
+
+.third {
+    background-color: orange;
+    color: black;
+    align-items: center;
+    grid-row: 1/2;
+}
+
+.third > img {
+    width: 39%;
+}
+
+@media only screen and (max-width: 600px) {
+    .Container {
+        display: block;
+    }
+}
